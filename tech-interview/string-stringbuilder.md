@@ -8,9 +8,17 @@ String >StringBuffer == StringBuilder
 
 # String 클래스
 - 한 번 생성되면 할당된 공간이 변하지 않는다. -> ***불변 immutable***
-- 실행 속도와 메모리 사용 문제가 발생한다.
 - 문자열 연산이 적고 멀티스레드 환경일 경우
-<!--문자열 연산(추가, 삭제) 작업 시 비효율적-->
+```c#
+String s = "data";
+s += "plus";
+```
+- 문자열 연산(추가, 삭제) 작업 시 비효율적 -> 실행 속도와 메모리 사용 문제가 발생한다.
+
+> 📌 C# String과 string의 차이<br>
+String는 System 네임스페이스에 속한 자료형으로 정확한 표현은 ***System.String***이다.<br/>
+using System; 문장을 이용하면 String로 표기해도 된다.<br/>
+string은 ***System.String***의 별칭?
 
 
 # StringBuilder 클래스, StringBuffer 클래스
@@ -37,11 +45,14 @@ String >StringBuffer == StringBuilder
 
 
 # 참고
-https://1-day-1-coding.tistory.com/54
-https://beforb.tistory.com/32
-https://velog.io/@doghqkr13/String-StringBuilder-StringBuffer
-https://aomee0880.tistory.com/150
-https://hahahoho5915.tistory.com/36
+https://1-day-1-coding.tistory.com/54<br/>
+https://beforb.tistory.com/32<br/>
+https://velog.io/@doghqkr13/String-StringBuilder-StringBuffer<br/>
+https://aomee0880.tistory.com/150<br/>
+https://hahahoho5915.tistory.com/36<br/>
+https://coding-factory.tistory.com/546<br/>
+https://basement142.tistory.com/9<br/>
+https://sualchi.tistory.com/13720500
 
 [^note1]: 동기화를 지원한다?<br/>
 여러 스레드가 한 자원을 사용하려고 할 때 다른 스레드의 접근을 막는 것 = 멀티스레드 환경을 지원
